@@ -34,7 +34,7 @@ sunz = {
     name                 = "sunflower"
     virtual_network_name = "pumpkin"
     resource_group_name  = "blue-berry-rg"
-    address_prefixes     = ["10.0.1.0/20"]
+    address_prefixes     = ["10.0.1.0/24"]
   }
 }
 pipz = {
@@ -46,20 +46,20 @@ pipz = {
 }
 nvms = {
   nicvm1 = {
-    pip_name        = "nutspip"
-    rg_name         = "blue-berry-rg"
-    subnet_name     = "sunflower"
-    vnet_name       = "pumpkin"
-    location        = "centralindia"
-    nic_name        = "nicjohns"
-    ipconfig_name   = "johnsbros"
-    vm_name         = "yoursvm07"
-    size            = "Standard_D2s_v3"
-    admin_username  = "frontendvm"
-    admin_password  = "Frontendvm@3"
-    image_publisher = "Canonical"
-    image_offer     = "0001-com-ubuntu-server-jammy"
-    image_sku       = "22_04-lts-gen2"
-    image_version   = "latest"
+    pip_name       = "nutspip"
+    rg_name        = "blue-berry-rg"
+    subnet_name    = "sunflower"
+    vnet_name      = "pumpkin"
+    location       = "centralindia"
+    nic_name       = "nicjohns"
+    ipconfig_name  = "johnsbros"
+    vm_name        = "yoursvm07"
+    size           = "Standard_D2s_v3"
+    admin_username = "frontendvm"
+    admin_password = "Frontendvm@3"
+    publisher      = "Canonical"
+    offer          = "0001-com-ubuntu-server-jammy"
+    sku            = "22_04-lts-gen2"
+    version        = "latest"
   }
 }
